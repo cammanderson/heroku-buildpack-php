@@ -6,7 +6,7 @@ echo "-----> Building Geos..."
 
 ### Geos
 echo "[LOG] Downloading Geos 3.4.2"
-wget –quiet http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
+curl -O http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
 tar -xjf geos-3.4.2.tar.bz2
 if [ ! -d "$geos_dir" ]; then
   echo "[ERROR] Failed to find geosphp directory $geos_dir"
