@@ -15,7 +15,7 @@ fi
 cd $geos_dir
 
 echo "Compiling Geos 3.4.2"
-/app/.heroku/php/bin/phpize
+#/app/.heroku/php/bin/phpize
 ./configure --enable-php --silent
 make --silent
 make install --silent
