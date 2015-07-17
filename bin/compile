@@ -262,6 +262,8 @@ fi
 
 status "Installing dependencies..."
 
+source $BP_DIR/bin/geos
+
 # check if we should use a composer.phar version bundled with the project
 if [[ -f "composer.phar" ]]; then
     [[ -x "composer.phar" ]] || error "File '/composer.phar' isn't executable; please 'chmod +x'!"

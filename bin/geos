@@ -14,11 +14,11 @@ if [ ! -d "$geos_dir" ]; then
 fi
 cd $geos_dir
 
-# /app/php/bin/phpize
-
-./configure --enable-php
-make
-make install
+echo "Compiling Geos 3.4.2"
+/app/php/bin/phpize
+./configure --enable-php --silent
+make --silent
+make install --silent
 
 echo "Import extension geos into php.ini"
 echo "extension=geos.so" >> /app/.heroku/php/etc/php/php.ini
